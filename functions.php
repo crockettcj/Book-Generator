@@ -31,18 +31,9 @@
 			if (convertToImg($numberOfPages,$bookID)){
 				
 					if(convertFirstPageToImg($bookID)){
-						//$price = get_cost($numberOfPages, "softcover", "US_TRADE");
 						writeCatalog($numberOfPages,$bookID,0);
-						
-						//exec("pdftk ../book/".$bookID."_atlas.pdf output ../book/".$bookID."_atlas_stripped.pdf uncompress");
-		 				//exec("sed '/Popup 90 0 R/,/12.2040 99.8996 l/d' ../book/".$bookID."_atlas_stripped.pdf > ../book/".$bookID."_atlas.pdf");
-		 	
-		 	
-		 	
-		 	
 						require_once ("database/testClean.php");
-						sendUserMail("Richard", "Vijgen", "mail@richardvijgen.nl", $numberOfPages);
-						//showRenderedBook($numberOfPages,$bookID);
+						
 					}
 			}
 		}
