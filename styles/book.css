@@ -1,0 +1,675 @@
+@font-face {
+    font-family: Akkurat-Bold;
+    font-style: normal;
+    font-weight: normal;
+   	text-decoration: underline;
+    src: url("fonts/Akkurat-Bold.ttf");
+   /*  src: url("../fonts/Akkurat.ttf"); */
+}
+@font-face {
+    font-family: AkkuratBold;
+    font-style: normal;
+    font-weight: normal;
+   	text-decoration: underline;
+    src: url("fonts/Akkurat-Bold.ttf");
+   /*  src: url("../fonts/Akkurat.ttf"); */
+}
+
+@font-face {
+    font-family: Akkurat;
+    font-style: normal;
+    font-weight: normal;
+   	text-decoration: underline;
+    src: url("fonts/Akkurat.ttf");
+   /*  src: url("../fonts/Akkurat.ttf"); */
+}
+@font-face {
+    font-family: AkkuratLight;
+    font-style: normal;
+    font-weight: normal;
+   	text-decoration: underline;
+    src: url("fonts/Akkurat-Light.ttf");
+   /*  src: url("../fonts/Akkurat.ttf"); */
+}
+@font-face {
+    font-family: TSTAR;
+    font-style: normal;
+    font-weight: normal;
+   	text-decoration: underline;
+    src: url("fonts/TSTAR-Regular.otf");
+   /*  src: url("../fonts/Akkurat.ttf"); */
+}
+@font-face {
+    font-family: ReplicaBold;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+    src: url("fonts/Replica-Bold.otf");
+}
+@font-face {
+    font-family: ReplicaLight;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+    src: url("fonts/Replica-Light.otf");
+}
+@font-face {
+    font-family: ReplicaRegular;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+    src: url("fonts/Replica-Regular.otf");
+}
+@font-face {
+    font-family: tstarregular;
+    font-style: normal;
+    font-weight: normal;
+   	src: url("fonts/TSTAR-Regular.otf");
+   /*  src: url("../fonts/Akkurat.ttf"); */
+
+}
+@page { 
+	size: 6in 9in;
+	margin:0mm;
+}
+.hl{
+	padding-left:1px;
+	padding-right:1px;
+}
+.col1{
+	float:left;
+	width:30%;
+	
+	margin-top:10px;
+	font: 12px, 'Akkurat', Arial, sans-serif;
+}
+.colSmall{
+	float:left;
+	width:10%;
+	
+	margin-top:10px;
+	font: normal,14pt/16pt Georgia,
+}
+#headerL{
+	position:absolute;
+	width:5in;
+	height:0.6645in;
+	left:0.5in;
+	font: 10px/10px 'Akkurat', Arial, sans-serif;
+	z-index: 1000;
+}
+#headerR{
+	position:absolute;
+	width:5in;
+	right:0.5in;
+	height:0.6645in;
+	font: 10px/10px 'Akkurat', Arial, sans-serif;
+	z-index: 1000;	
+}
+.headerLarge{
+	font: 8pt/8pt 'Akkurat', Arial, sans-serif;
+}
+.headerSmall{
+	font: 6pt/3pt 'Akkurat', Arial, sans-serif;
+}
+.headerSmallLight{
+	font: 6pt/3pt 'AkkuratLight', Arial, sans-serif;
+}
+.headerColLeft{
+	float:left;
+	width:1.515in;
+	height:100%;
+	margin-right:0.1329in;
+}
+.headerColRight{
+	float:right;
+	width:1.515in;
+	height:100%;
+	margin-left:0.1329in;
+}
+.alignBottom{
+	position:absolute;
+	bottom:0in;
+}
+.pageNumberLeft{
+	position:absolute;
+	left:0.2in;
+	height:0.6645in;
+	font: 14px/14px 'Akkurat', Arial, sans-serif;
+	z-index: 1000;
+	
+}
+.pageNumberRight{
+	position:absolute;
+	right:0.2in;
+	height:0.6645in;
+	font: 14px/14px 'Akkurat', Arial, sans-serif;
+	z-index: 1000;	
+
+	text-align: right;
+	padding-right:0.2in;
+}
+.textCollumn{
+	float:left;
+	width:65%;
+	height:9in;
+	margin-bottom:5mm;
+	font: 10px/10px 'Akkurat', Arial, sans-serif;
+	
+}
+#textCol1{
+	float:left;
+	width:33%;
+	height:9in;
+	font: 11px/11px 'Akkurat', Arial, sans-serif;
+}
+#textCol2{
+	float:left;
+	width:65%;
+	margin-right:2%;
+	height:9in;
+	font: 11px/11px 'Akkurat', Arial, sans-serif;
+}
+
+
+#leftPageWithMargins{
+	page-break-after: always;
+	position:absolute;
+	width:4.81in;
+	height:7.4in;
+	top:1.1181in;
+	left:0.5in;
+	overflow:hidden;
+	
+}
+.titlePageTitle{
+	color: #62deff;
+	font-size: 40pt;
+}
+.titlePageSubTitle{
+	color: #62deff;
+	font-size: 18pt;
+}
+.titlePage{
+	font-family: TSTAR;
+	
+	
+}
+#leftPageWithoutMargins{
+	page-break-after: always;
+	position:absolute;
+	width:6in;
+	height:9in;
+	top:0in;
+	left:0in;
+	overflow:hidden;
+	
+}
+#rightPageWithMargins{
+	page-break-after: always;
+	position:absolute;
+	width:4.81in;
+	height:7.4in;
+	right:0.5in;
+	top:1.1181in;
+	/* margin-left:-10px; */
+	overflow:hidden;
+}
+#rightPageWithoutMargins{
+	page-break-after: always;
+	position:absolute;
+	width:6in;
+	height:9in;
+	right:0in;
+	top:0in;
+	/* margin-left:-10px; */
+	overflow:hidden;
+}
+.mapHolderLeft{
+	position: absolute;
+	width:12in;
+	height:9in;
+	overflow:hidden;
+	margin-left:-0.00001in;
+	
+}
+
+.mapHolderRight{
+	position: absolute;
+	width:12in;
+	height:9in;
+	margin-left:-6.00001in;
+	overflow:hidden;
+}
+.articleHolder{
+	position: absolute;
+	width:6in;
+	height:9in;
+	overflow:hidden;
+	margin-left:-0.00001in;
+	
+}
+.imgSpreadHolderLeft{
+	position: absolute;
+	width:11.377in;
+	height:7.527in;
+	overflow:hidden;
+}
+.imgSpreadHolderRight{
+	position: absolute;
+	width:11.377in;
+	height:7.527in;/* was 8 */
+	margin-left:-5.0885in;
+	overflow:hidden;
+}
+.imageSpread{
+	position:absolute;
+	height:100%;
+	
+}
+.map{
+	position:absolute;
+	height:100%;
+	width:100%;
+}
+.ToCBackground{
+	position: absolute;
+	top:0px;
+	width:100%;
+	height:100%;
+	background-color: blue;
+	
+}
+
+.ToCContainer{
+	position:absolute;
+	width:4.81in;
+	height:7.4in;
+	right:0.5in;
+	top:1.1181in;
+	
+	
+}
+.TocTitle{
+	position: relative;
+	font: 60pt/60pt 'TSTAR', Arial, sans-serif;
+	color:black;
+	margin-bottom:40pt;
+	letter-spacing:-2pt;
+}
+.TocLine{
+	position: relative;
+	font: 18pt/21pt 'TSTAR', Arial, sans-serif;
+	color:black;
+	width:100%;
+	
+}
+.tocLeft{
+	float:left;
+	width:80%;
+	
+}
+.tocRight{
+	float:left;
+	width:20%;
+	
+}
+#newsCol1{
+	float:left;
+	width:33%;
+	height:9in;
+}
+#newsCol2{
+	float:left;
+	width:65%;
+	height:9in;
+}
+#newsTitle{
+	font: 40pt/40pt 'TSTAR', Arial, sans-serif;
+	letter-spacing:-1.5pt;
+}
+#newsSub{
+	font: 12pt/12pt 'TSTAR', Arial, sans-serif;
+	
+}
+.newsItem{
+	float:left;
+	width:100%;
+	margin-bottom:5mm;
+}
+.newsHead{
+	float:left;
+	font-family: TSTAR;
+	color:black;
+	font-size: 14pt;
+	text-decoration: underline;
+}
+.newsDescription{
+	float:left;
+	font-family: AkkuratLight;
+	color:black;
+	font-size: 8pt;
+	margin-top:8pt;
+	width:100%;
+}
+.newsDate{
+	float:left;
+	font-family: AkkuratBold;
+	color:black;
+	font-size: 6pt;
+	margin-top:6pt;
+}
+.quote{
+	font-family: TSTAR;
+	
+	font-size: 40pt;
+}
+.still{
+	position: absolute;
+	width:100%;
+	height:100%;
+	background-color: aqua;
+}
+#test{
+	
+	float:left;
+	
+	width:100%;
+	height:200px;
+	background-color: gray;
+	/* background-image: url("http://richardvijgen.nl/sites/jodi/data2/0f98cb2701fe52b31a428830f63f6d84.jpg"); */
+	background-position: center;
+}
+
+
+.iconographyThumb{
+	position: relative;
+	width:2in;
+	height:2in;	
+	
+	background-color: white;
+	overflow:hidden;
+}
+.holderHolder{
+	float:left;
+
+	margin-right:0.1in;
+	margin-bottom:0.4in;
+	overflow:hidden;
+}
+.numberInd{
+	position: absolute;
+	width:15px;
+	height:15px;
+	background-color: black;
+	font-family: Akkurat-Bold;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 8pt;
+	color: white;
+	z-index: 1;	
+}
+.thumbHolderL{
+	position:absolute;
+	width:2in;
+	height:1.46in;
+}
+.thumbHolderS{
+	position:absolute;
+	width:1.46in;
+	height:2in;
+}
+.imgThumb{
+	
+	width:100%;
+	height:100%;
+}
+
+.iconographyChurchEntry{
+	float:left;
+	width:1.1in;
+	height:1.1in;
+	margin-right:0.1in;
+	margin-bottom:0.1in;
+	
+}
+.iconographySpacer{
+	float:left;
+	width:100%;
+	height:1px;
+}
+.iconoTitle{
+	font: 7pt/9pt 'AkkuratBold', Arial, sans-serif;
+}
+.iconoAdress{
+	margin-top:7pt;
+	font: 7pt/9pt 'Akkurat', Arial, sans-serif;
+}
+.iconoUser{
+	margin-top:7pt;
+	font: 7pt/9pt 'AkkuratLight', Arial, sans-serif;
+}
+
+.afbeeldingP{
+	float:left;
+	top:0px;
+	
+	overflow:hidden;
+	width:auto;
+	height:100%;
+
+	text-align: center;
+	
+}
+.afbeeldingL{
+	float:left;
+	top:0px;
+	
+	overflow:hidden;
+	width:100%;
+	height:auto;
+
+	text-align: center;
+	
+}
+.image{
+	display: inline;
+	
+	height:100%;
+	width:auto;
+	overflow:hidden;
+}
+.indexCollumn{
+	float:left;
+	width:30%;
+	margin-right:3%;
+}
+.indexBlock{
+	float:left;
+	height:auto;
+	width:100%;
+	overflow: hidden;
+	margin-right:3%;
+	margin-bottom:3mm;
+	
+}
+.indexBolletje{
+	position: absolute;
+	top:0px;
+	left:0px;
+	z-index: 0;
+}
+.nummerOverlay{
+	position: absolute;
+	top:0px;
+	left:0px;
+	width:3mm;
+	margin-top:-.3mm;
+	text-align: center;
+	font-family: Akkurat; 
+	font-size: 5pt;
+	color:white;
+}
+.addressNr{
+	position: relative;
+	width:4mm;
+	height:4mm;
+	color:white;
+}
+.addressHead{
+	position: absolute;
+	margin-left:5mm;
+	margin-top:-0.5mm;
+	width:30mm;
+	top:0px;
+
+	
+}	
+.addressSpace{
+	float:left;
+	width:30mm;
+	color:transparent;
+
+}
+.indexTitle{
+	position: relative;
+	font-family: TSTAR;
+	font-size:8pt;
+	line-height:10pt;
+	height:auto;
+}
+.indexText{
+	float:left;
+	margin-top:-4mm;
+	margin-bottom:0mm;
+	font-family: Akkurat;
+	font-size: 5pt;
+	margin-left:5mm;
+	width:30mm;
+}
+
+/* ===============================================COVER STYLES =============================================*/
+/* ===============================================COVER STYLES =============================================*/
+/* ===============================================COVER STYLES =============================================*/
+
+
+@font-face {
+    font-family: ReplicaBold;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+    src: url("fonts/Replica-Bold.otf");
+}
+@font-face {
+    font-family: ReplicaLight;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+    src: url("fonts/Replica-Light.otf");
+}
+@font-face {
+    font-family: ReplicaRegular;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+    src: url("fonts/Replica-Regular.otf");
+}
+@font-face {
+    font-family: AkkuratLight;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+    src: url("fonts/Akkurat-Light.ttf");
+}
+#front{
+	position:absolute;
+	font-family: Akkurat;
+	color:white;
+	font-size: 14px;
+	height:100%;
+
+}
+#spineText{
+	position:relative;
+	top:10mm;
+	font-family: ReplicaRegular;
+	color:black;
+	
+	font-size: 12px;
+}
+#back{
+	position:absolute;
+	font-family: Akkurat;
+	color:white;
+	font-size: 14px;
+	height:100%;
+
+}
+#spine{
+	position:absolute;
+	font-family: Akkurat;
+	color:white;
+	font-size: 14px;
+	height:100%;
+
+	
+}
+#backInner{
+	position:absolute;
+	width:125mm;
+	left:10mm;
+	top:10mm;
+	font-family: ReplicaRegular;
+	color:black;
+	font-size: 26pt;
+	line-height: 36pt;
+}
+.blue{
+	color:#49C4F2;
+}
+.coverImage{
+	position: relative;
+	left:0mm;
+	top:0mm;
+	width:6in;
+	height:9in;
+	background-color: white;
+}
+.coverTitle{
+	position: absolute;
+	top:9.5mm;
+	left:10.5mm;
+	font-family: ReplicaBold;
+	font-size: 40pt;
+	letter-spacing: -0pt;
+	color:black;
+}
+.coverSubTitle{
+	
+	position: absolute;
+	top:45mm;
+	left:70mm;
+	font-family: ReplicaRegular;
+	font-size: 19pt;
+	color:black;
+}
+.coverFooter{
+	position: absolute;
+	top: 203mm;
+	left:10.5mm;
+	width:133.7mm;
+	
+
+}
+#colophon{
+	font-size:8pt;
+	line-height:10pt;
+}
+.coverCollumn{
+	float:left;
+	width:28%;
+	font-family: AkkuratLight;
+	font-size: 7pt;
+	color:black;
+	padding-right:5%;
+}

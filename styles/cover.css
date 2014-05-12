@@ -1,0 +1,124 @@
+@font-face {
+    font-family: ReplicaBold;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+    src: url("fonts/Replica-Bold.otf");
+}
+@font-face {
+    font-family: ReplicaLight;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+    src: url("fonts/Replica-Light.otf");
+}
+@font-face {
+    font-family: ReplicaRegular;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+    src: url("fonts/Replica-Regular.otf");
+}
+@font-face {
+    font-family: AkkuratLight;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+    src: url("fonts/Akkurat-Light.ttf");
+}
+#front{
+	position:absolute;
+	font-family: Akkurat;
+	color:white;
+	font-size: 14px;
+	height:100%;
+
+}
+#spineText{
+	position:relative;
+	top:10mm;
+	font-family: ReplicaRegular;
+	color:black;
+	
+	font-size: 12px;
+}
+#back{
+	position:absolute;
+	font-family: Akkurat;
+	color:white;
+	font-size: 14px;
+	height:100%;
+
+}
+#spine{
+	position:absolute;
+	font-family: Akkurat;
+	color:white;
+	font-size: 14px;
+	height:100%;
+
+	
+}
+#backInner{
+	position:absolute;
+	width:125mm;
+	left:10mm;
+	top:10mm;
+	font-family: ReplicaRegular;
+	color:black;
+	font-size: 26pt;
+	line-height: 36pt;
+}
+.blue{
+	color:#49C4F2;
+}
+.coverImage{
+	position: relative;
+	left:0mm;
+	top:0mm;
+	width:6in;
+	height:9in;
+	background-color: white;
+}
+.coverImage2{
+	position: relative;
+	left:0mm;
+	top:0mm;
+	width:6in;
+	height:9in;
+	
+}
+.coverTitle{
+	position: absolute;
+	top:9.5mm;
+	left:10.5mm;
+	font-family: ReplicaBold;
+	font-size: 40pt;
+	letter-spacing: -0pt;
+	color:black;
+}
+.coverSubTitle{
+	
+	position: absolute;
+	top:45mm;
+	left:70mm;
+	font-family: ReplicaRegular;
+	font-size: 19pt;
+	color:black;
+}
+.coverFooter{
+	position: absolute;
+	top: 203mm;
+	left:10.5mm;
+	width:133.7mm;
+	
+
+}
+.coverCollumn{
+	float:left;
+	width:28%;
+	font-family: AkkuratLight;
+	font-size: 7pt;
+	color:black;
+	padding-right:5%;
+}
